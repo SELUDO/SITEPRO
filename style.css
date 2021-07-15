@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1:#83a4cd;
+    --color2: #F4F4F4;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    line-height: 1.5;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    height: 350px;
+}
+
+div.cover {
+    background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover.jpg) no-repeat center/cover;
+    height: 360px;
+    position: relative;
+}
+
+img.cover-profile {
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 50px;
+}
+
+h1 {
+    color: white;
+    font-size: 35px;
+    text-align: center; 
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0px;
+}
+
+div.cover p {
+    color: lightgray;
+    font-size: 15px;
+    text-align: center; 
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+div.cover-contact {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+}
+
+div.cover-contact p {
+    text-align: left;  
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.cover-contact p:first-child{
+    margin-bottom: 14px;
+}
+div.cover-contact * {
+    color: white;
+    font-size: 14px;
+    
+}
+
+a.contact-bouton {
+    font-size: 14px;
+    border: solid 2px var(--color1);
+    padding: 8px 15px;
+    background-color: #00000040;
+    color: var(--color1);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+a.contact-bouton:hover {
+    color: white;
+    border: 2px solid white;
+}
+
+.section {
+     padding-left: 40px;
+     padding-right: 40px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     overflow: auto;
+     text-align: center;
+}
+
+div.section-grise-1 {
+    background: url(triangle2white.svg) no-repeat center bottom -1px/100%;
+    background-color: var(--color2);
+    padding-bottom: 70px;
+}
+
+div.section-grise-2 {
+    background: url(triangle1white.svg) no-repeat center top/100%;
+    background-color: var(--color2);
+    padding-top: 80px;
+}
+
+div.separateur {
+    height: 1px;
+    width: 150px;
+    background-color: #979797;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+}
+
+p.description {
+    max-width: 450px;
+    text-align: center;
+    font-size: 22px;
+    color: #656565;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+img.col40 {
+    width: 40%; 
+    display: inline-block;
+}
+
+div.col60 {
+    width: 60%;
+    padding-left: 16px;
+}
+
+.float-right {
+    float: right;
+}
+
+div.texte-avec-ligne-verticale {
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+    height: 50px;
+    display: inline-block;
+}
+
+div.texte-avec-ligne-verticale p {
+    margin-top: 0;
+}
+
+div.barre-verticale {
+    background-color: var(--color1);
+    height: 50px;
+    width: 4px;
+    margin-right: 8px;
+}
+.col-portfolio {
+    width: 47%;
+    max-width: none;
+}
+
+.frame {
+    padding: 30px 50px 30px 50px;
+    margin: 20px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+img.portrait-frame {
+    width: 100px;
+}
+
+p.titre-frame {
+    text-align: center ;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+table.frame {
+    padding: 0;
+    margin: 0;
+    box-shadow: none
+}
+
+
+/* PORTFOLIO */
+
+div.portfolio-header {
+    height: 90px;
+    background: url(header.jpg) no-repeat center/cover;
+    position: relative;
+}
+
+p.portofolio-header-title {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 4px;
+    padding-left: 8px;
+}
+
+h1.portfolio-title {
+    color: black;
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+
+.display-mobile {
+    display: none;
+}
+
+.img-portfolio {
+    width: 70%;
+    max-width: 475px;
+    margin-top: 20px;
+}
+
+
+h2.portfolio-title {
+    font-size: 26px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px)
+{
+    img.cover-profile {
+        height: 90px;
+        margin-top: 75px;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 38px;
+        text-align: center; 
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    div.cover p {
+        font-size: 13px;
+    }
+
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+
+   }
+   
+   div.section-grise-1 {
+       background: url(triangle2white.svg) no-repeat center bottom -1px/100%;
+       background-color: var(--color2);
+       padding-bottom: 40px;
+   }
+
+   img.col40 {
+    width: 100%; 
+    margin-bottom: 20px;
+    display: inline-block;
+   }
+
+    div.col60 {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    table.col-portfolio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .frame {
+        padding: 0px;
+        background-color: white;
+        overflow: auto;
+        margin: 0;
+        box-shadow: none;
+    }
+    
+    p.titre-frame {
+        text-align: center ;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    table.frame {
+        padding: 0;
+        margin: 0;
+        box-shadow: none
+    }
+
+    img.portrait-frame {
+        width: 70px;
+    }
+    
+    p.portofolio-header-title {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+        padding-top: 4px;
+        padding-left: 8px;
+    }
+    
+    h1.portfolio-title {
+        font-size: 40px;
+    }
+    
+    
+    h2.portfolio-title {
+        font-size: 22px;
+    }
+
+    a.contact-bouton {
+        font-size: 12px;
+        padding: 7px 15px;
+    }
+
+    .img-portfolio {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .display-mobile {
+        display: block;
+    }
+}
